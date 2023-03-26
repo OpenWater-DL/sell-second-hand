@@ -114,6 +114,8 @@ fetch(FULL_URL)
     }
   })
   .then(() => {
+    isChecked();//启动之后先执行一次，筛选
+
     const items = document.querySelectorAll(".item");
 
     console.log(items);
@@ -138,7 +140,6 @@ fetch(FULL_URL)
 
 
   });
-
 
   function isChecked(){
     if(document.getElementById("check-in-stock").checked){
