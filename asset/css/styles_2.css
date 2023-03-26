@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --background-color: #525695;
+  --background-color: #5458a1;
   --title-color: #a8ff65;
   --objname-color: #fffb00;
   --price-color: #79ff31;
@@ -36,8 +36,7 @@ body {
   overflow: hidden;
 }
 #page-title p {
-  -webkit-animation: yurayura 3s ease-in-out infinite;
-          animation: yurayura 3s ease-in-out infinite;
+  animation: yurayura 3s ease-in-out infinite;
   text-align: center;
   letter-spacing: 10px;
   font-size: 3rem;
@@ -46,18 +45,6 @@ body {
   white-space: nowrap;
   margin: 0;
   margin-top: 2rem;
-}
-
-@-webkit-keyframes yurayura {
-  0% {
-    transform: rotate(-5deg) translateX(-10%);
-  }
-  50% {
-    transform: rotate(5deg) translateX(10%);
-  }
-  100% {
-    transform: rotate(-5deg) translateX(-10%);
-  }
 }
 
 @keyframes yurayura {
@@ -73,7 +60,6 @@ body {
 }
 #check-div {
   position: fixed;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
